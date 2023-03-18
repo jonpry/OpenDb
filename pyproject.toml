@@ -1,0 +1,19 @@
+[build-system]
+requires = [
+    "wheel",
+    # Check the updated version pinning requirements in:
+    # https://github.com/pypa/setuptools_scm
+    "setuptools",
+    "setuptools_scm[toml]",
+    "cmake_build_extension",
+    "numpy",
+    "pybind11",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
